@@ -35,7 +35,7 @@ Users can also add their profile pictures to their profile
         User will receive an email from email@gmail.com.
         Note: 1. You can only add gmail accounts.
               2. If your gmail account has '2-step verification' enabled then you must create an app password,
-                 if not then enable 'Less Secured apps' login in security tab of your account.
+                 if not, then enable 'Less Secured apps' login in security tab of your account.
   ```
   
  # Usage
