@@ -144,9 +144,9 @@ EMAIL_HOST_USER = os.environ.get("EMAIL_USER")
 EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_PASS")
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': "hjdhlt2bi",
-    'API_KEY': "766374343336823",
-    'API_SECRET': "XN9ZLJurzufJu0mU2RJERhevp8g",
+    'CLOUD_NAME': os.environ.get("CLOUD_NAME"),
+    'API_KEY': os.environ.get("MEDIA_API_KEY"),
+    'API_SECRET': os.environ.get("MEDIA_API_SECRET"),
 }
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
