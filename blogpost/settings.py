@@ -21,10 +21,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = "os.environ.get('SECRET_KEY')"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = (os.environ.get('DEBUG_VALUE') == "True")
+DEBUG = True
 
 ALLOWED_HOSTS = ['blogpostakrith.herokuapp.com']
 
@@ -148,6 +148,6 @@ CLOUDINARY_STORAGE = {
     'API_KEY': "766374343336823",
     'API_SECRET': "XN9ZLJurzufJu0mU2RJERhevp8g",
 }
-# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 django_heroku.settings(locals())
